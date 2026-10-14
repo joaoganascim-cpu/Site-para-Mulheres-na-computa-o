@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mulheres na Computação | Transformando o Futuro da Tecnologia</title>
+    <title>Mulheres na Computação | Pioneiras e Impacto na Tecnologia</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -159,7 +159,7 @@
             margin: -3rem auto 6rem;
             padding: 0 2rem;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 1.5rem;
         }
 
@@ -303,6 +303,46 @@
             margin-bottom: 0.5rem;
         }
 
+        /* References / Links Section */
+        .references-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .ref-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: var(--text-light);
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        .ref-card:hover {
+            background: rgba(124, 58, 237, 0.1);
+            border-color: var(--primary);
+        }
+
+        .ref-card i {
+            font-size: 1.8rem;
+            color: var(--secondary);
+        }
+
+        .ref-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .ref-info p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
         /* Footer */
         footer {
             background: #090d16;
@@ -318,21 +358,6 @@
             flex-direction: column;
             align-items: center;
             gap: 2rem;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        .social-links a {
-            color: var(--text-muted);
-            font-size: 1.5rem;
-            transition: color 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: var(--primary);
         }
 
         .copyright {
@@ -378,7 +403,7 @@
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#pioneiras">Pioneiras</a></li>
                 <li><a href="#historia">História</a></li>
-                <li><a href="#iniciativas">Iniciativas</a></li>
+                <li><a href="#fontes">Fontes & Referências</a></li>
             </ul>
         </nav>
     </header>
@@ -387,8 +412,8 @@
     <section id="inicio" class="hero">
         <div class="hero-content">
             <span class="badge"><i class="fa-solid fa-sparkles"></i> Empoderando Gerações</span>
-            <h1>Mulheres que Moldaram e Reorganizam a <span>Computação</span></h1>
-            <p>Conheça as histórias, o impacto e a relevância fundamental das mulheres na criação da tecnologia moderna e no desenvolvimento do futuro digital.</p>
+            <h1>Mulheres que Moldaram a <span>Computação</span></h1>
+            <p>Conheça as histórias, o impacto e a relevância fundamental das mulheres na criação da tecnologia moderna, dos algoritmos e da exploração espacial.</p>
             <a href="#pioneiras" class="btn-primary">
                 Explorar Pioneiras <i class="fa-solid fa-arrow-right"></i>
             </a>
@@ -398,16 +423,20 @@
     <!-- Stat Cards -->
     <section class="stats">
         <div class="stat-card">
-            <h3>1ª</h3>
-            <p>Programadora da história foi uma mulher (Ada Lovelace)</p>
+            <h3>1843</h3>
+            <p>Ano em que o primeiro algoritmo foi escrito por Ada Lovelace</p>
         </div>
         <div class="stat-card">
-            <h3>1946</h3>
-            <p>Ano do ENIAC, programado por 6 mulheres visionárias</p>
+            <h3>6</h3>
+            <p>Mulheres programaram o ENIAC, o primeiro computador digital</p>
         </div>
         <div class="stat-card">
-            <h3>100%</h3>
-            <p>Inspirador para as futuras gerações de devas e engenheiras</p>
+            <h3>Apollo 11</h3>
+            <p>Software do pouso na Lua foi liderado por Margaret Hamilton</p>
+        </div>
+        <div class="stat-card">
+            <h3>802.11</h3>
+            <p>Padrão do Wi-Fi baseado na invenção de Hedy Lamarr</p>
         </div>
     </section>
 
@@ -415,39 +444,44 @@
     <section id="pioneiras" class="section-padding">
         <div class="section-title">
             <h2>Grandes Pioneiras</h2>
-            <p>As mentes brilhantes que abriram o caminho da programação e inovação.</p>
+            <p>Mentes brilhantes que revolucionaram a computação e a tecnologia.</p>
         </div>
 
         <div class="pioneers-grid">
+            <!-- 1. Ada Lovelace -->
             <div class="pioneer-card">
                 <div>
                     <div class="pioneer-icon"><i class="fa-solid fa-scroll"></i></div>
                     <h3>Ada Lovelace</h3>
                     <p class="role">A Primeira Programadora</p>
-                    <p>Escreveu o primeiro algoritmo da história para ser processado por uma máquina, a Máquina Analítica de Babbage, em 1843.</p>
+                    <p>Escreveu em 1843 o primeiro algoritmo para a Máquina Analítica de Charles Babbage, prevendo que os computadores poderiam processar além de meros cálculos numéricos.</p>
                 </div>
             </div>
 
+            <!-- 2. Grace Hopper -->
             <div class="pioneer-card">
                 <div>
                     <div class="pioneer-icon"><i class="fa-solid fa-terminal"></i></div>
                     <h3>Grace Hopper</h3>
                     <p class="role">Mãe do Compilador e COBOL</p>
-                    <p>Criou o primeiro compilador para linguagens de programação e popularizou o termo "bug" após encontrar uma mariposa no computador.</p>
+                    <p>Inventou o primeiro compilador para linguagens de programação, criou a base para o COBOL e popularizou o termo "bug" na computação.</p>
                 </div>
             </div>
 
+            <!-- 3. Margaret Hamilton -->
             <div class="pioneer-card">
                 <div>
                     <div class="pioneer-icon"><i class="fa-solid fa-rocket"></i></div>
                     <h3>Margaret Hamilton</h3>
-                    <p class="role">Diretora da Apollo / NASA</p>
-                    <p>Liderou o time de desenvolvimento do software de navegação da missão Apollo 11, garantindo o pouso seguro do homem na Lua.</p>
+                    <p class="role">Diretora do Apollo / NASA</p>
+                    <p>Liderou o desenvolvimento do software de bordo da missão Apollo 11. Cunhou o termo "Engenharia de Software" para dar o devido valor à disciplina.</p>
                 </div>
             </div>
 
+            <!-- 4. Katherine Johnson -->
             <div class="pioneer-card">
                 <div>
                     <div class="pioneer-icon"><i class="fa-solid fa-calculator"></i></div>
                     <h3>Katherine Johnson</h3>
                     <p class="role">Matemática da NASA</p>
+                    <p>Calculou as trajetórias de voo para as missões Mercury e Apollo da NASA. Suas contas manuais de precisão garantiram o sucesso dos voos espaciais.</p
